@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: rgb(220, 173, 116);
+        color: black;
+        font-size: 15pt;
+      }
+    </style>
+
+    <script>
+      nome = prompt(`Qual é o seu nome?`);
+
+      document.write(
+        `Olá, <strong>${nome}</strong>. Seu nome tem ${nome.length} letras.<br/>`,
+      );
+
+      document.write(
+        `Seu nome todo em maíusculo fica da seguinte forma: ${nome.toUpperCase()}.<br/>`,
+      );
+
+      document.write(
+        `O seu nome todo em minúsculo fica da seguinte forma: ${nome.toLowerCase()}.<br/>`,
+      );
+
+      num = prompt("Insira um número com casas decimáis.");
+      num = Number(num);
+
+      document.write(
+        `O número inserido filtrado para apenas duas casas decimáis é: ${num.toFixed(2)}<br/>`,
+      );
+
+      document.write(
+        `O número inserido com vírgula ao invés de ponto e filtrado para apenas duas casas decimáis: ${num.toFixed(2).replace(".", ",")}<br/>`,
+      );
+
+      document.write(
+        `O número inserido formatado para reais fica da seguinte forma: ${num.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}<br/>`,
+      );
+
+      // Comandos em node para formatação numérica
+      // > n1 = 10.3243
+      // 10.3243
+      // > n1.toFixed(2).replace('.', ',')
+      // '10,32'
+    </script>
+  </body>
+</html>
