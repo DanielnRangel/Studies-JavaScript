@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: rgb(220, 173, 116);
+        color: black;
+        font-size: 15pt;
+        font: normal Arial;
+      }
+    </style>
+    <p>Aqui vai o <strong>resultado</strong>.</p>
+    <p>TESTE2</p>
+    <div id="tst">Clique em mim</div>
+    <script>
+      p1 = document.getElementsByTagName("p")[0];
+      document.write(p1.innerText + "<br/>");
+      document.write(p1.innerHTML);
+      p1.innerText = "eu consigo mudar este texto?";
+      id1 = document.querySelector("div#tst");
+      id1.style.background = "green";
+    </script>
+  </body>
+</html>
