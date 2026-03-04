@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudos</title>
+    <style>
+      body {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-size: 15pt;
+        font: normal Arial;
+      }
+      #area {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        /* background: radial-gradient(circle at 50%, bisque, rgb(220, 173, 116)); */
+        border-radius: 200pt;
+        background-color: rgb(166, 2, 166);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="area">Interaja...</div>
+
+    <script>
+      conteu = document.getElementById("area");
+
+      conteu.addEventListener("onclick", clicar);
+      conteu.addEventListener("ondblclick", dblClick);
+      conteu.addEventListener("onmouseenter", entrou);
+      conteu.addEventListener("onmouseout", saiu);
+
+      function clicar() {
+        conteu.innerText = "Você interagiu!";
+      }
+
+      function dblClick() {
+        conteu.innerText = "Double click";
+      }
+
+      function entrou() {
+        conteu.style.backgroundColor = "rgb(106, 2, 106)";
+        conteu.innerText = "Entrou!";
+      }
+
+      function saiu() {
+        conteu.style.backgroundColor = "rgb(166, 2, 166)";
+        conteu.innerText = "Saiu!";
+      }
+    </script>
+  </body>
+</html>
