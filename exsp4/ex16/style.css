@@ -1,5 +1,5 @@
 body {
-  background: rgba(50, 118, 253, 0.781);
+  background: #1c2541;
   font: normal 15pt arial;
 }
 
@@ -17,14 +17,20 @@ section {
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.384);
 }
 
+/* div {
+  width: 250px;
+  margin: auto;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.384);
+} */
+
 input {
   border-radius: 5px;
-  /* background-color: ; */
+  background-color: #b2cde4;
 }
 
 button {
   border-radius: 5px;
-  /* background-color: ; */
+  background-color: #b2cde4;
 }
 
 footer {

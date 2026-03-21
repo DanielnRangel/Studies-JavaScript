@@ -1,5 +1,5 @@
 body {
-  background: rgba(50, 118, 253, 0.781);
+  background: #d2b48c;
   font: normal 15pt arial;
 }
 
@@ -19,12 +19,20 @@ section {
 
 input {
   border-radius: 5px;
-  /* background-color: ; */
+  background-color: #4682b4;
 }
+
+input::placeholder {
+  color: white;
+}
+
+/* #tabuada {
+  height: 200px;
+} */
 
 button {
   border-radius: 5px;
-  /* background-color: ; */
+  background-color: #4682b4;
 }
 
 footer {
